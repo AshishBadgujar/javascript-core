@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">My Library</a></li>
+            <li><a href="#">Home</a></li>
+            <li><input type="text" id="searchText" placeholder="search here"></li>
+            <li><button class="btn">Search</button></li>
+        </ul>
+    </nav>
+
+    <div class="full">
+
+        <h1 class="heading">Welcome to my Library</h1>
+        <div class="container">
+            <h3>Book Name</h3>
+            <input type="text" id="title" class="book" placeholder="enter name of book">
+            <h3>Author Name</h3>
+            <input type="text" id="author" class="book" placeholder="enter name of author">
+            <h3>type</h3>
+            <form action="app.js">
+
+                <div>
+                    Fiction:<input type="radio" name="type" id="fiction" class="book"></div>
+                    <div>
+                        computer programming:<input type="radio"name="type"  id="programming" class="book">
+                    </div> 
+                    <div>
+                        cooking:<input type="radio" id="cooking" name="type" class="book">
+                    </div>
+                    <button type="submit" class="addbtn" id="addBook">Add Book</button>
+            </form>
+            
+        </div>
+        <h2 class="heading">Your books</h2>
+        <hr>
+        <table>
+            <thead class="table">
+                <!-- <td class="element"><strong>Sno</strong></td> -->
+                <td class="element"><strong>Name</strong></td>
+                <td class="element"><strong>Author</strong></td>
+                <td class="element"><strong>Type</strong></td>
+            </thead>
+            
+            <tbody class="table" id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
